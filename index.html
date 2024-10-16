@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Login - SignUp</title>
+</head>
+<body>
+    <section class="container" id="container">
+        <section class="sign_up"> <!-- Sign Up -->
+            <form action="#">
+                <h1>Create Account</h1>
+                <section class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </section>
+                <span>Or Use Email For Password</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </section> <!-- END Sign Up -->
+        <!-- ******************************* -->
+        <section class="sign_in"> <!-- Sign In -->
+            <form action="#">
+                <h1>LogIn</h1>
+                <section class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </section>
+                <span>Or Use Email For Registration</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot Password</a>
+                <button>logIn</button>
+            </form>
+        </section> <!-- END Sign In -->
+        <!-- ***************************** -->
+        <section class="toogle_container"> <!-- Toogle Container -->
+            <section class="toogle">
+                <section class="toogle_panel toogle_left"> <!-- Toogle Left -->
+                    <h1>Welcome User!</h1>
+                    <p>If You Already Have An Account</p>
+                    <button class="hidden" id="login">LogIn</button>
+                </section> <!-- END Toogle Left -->
+                <!-- ************************** -->
+                <section class="toogle_panel toogle_right"> <!-- Toogle Right -->
+                    <h1>Hello, User!</h1>
+                    <p>If You Don't Have An Account</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </section> <!-- END Toogle Right --> 
+            </section>
+        </section> <!-- END Toogle Container -->
+    </section>
+    <!-- *********************************** -->
+    <!-- Ion Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- App JS -->
+    <script src="./app.js"></script>
+</body>
+</html>
